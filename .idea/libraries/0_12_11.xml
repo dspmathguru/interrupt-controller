@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="0.12.11">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/mill-launcher/0.12.11.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

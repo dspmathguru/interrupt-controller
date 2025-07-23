@@ -1,0 +1,11 @@
+set_io clk 21
+set_io rst 99
+set_io irqs_0 112 # PMOD J3 pin 1
+set_io irqs_1 113 # PMOD J3 pin 2
+set_io irqs_2 114 # PMOD J3 pin 3
+set_io irqs_3 115 # PMOD J3 pin 4
+set_io sclk 119 # PMOD J3 pin 7
+set_io mosi 118 # PMOD J3 pin 8
+set_io cs_n 117 # PMOD J3 pin 9
+set_io miso 116 # PMOD J3 pin 10
+set_io exti 95  # Spare LED pin for EXTI
