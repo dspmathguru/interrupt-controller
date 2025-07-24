@@ -23,6 +23,14 @@ jobs:
     - name: Install Verilator
       run: sudo apt update && sudo apt install -y verilator
 
+    - name: Install OSS CAD Suite
+      run: |
+        wget https://github.com/YosysHQ/oss-cad-suite/releases/latest/download/oss-cad-suite-linux-x64-$(date +%Y%m%d).tgz -O oss-cad-suite.tgz
+        tar -xzf oss-cad-suite.tgz
+        echo "OSS_CAD_SUITE_DIR=$(pwd)/oss-cad-suite" >> $GITHUB_ENV
+        echo "$(pwd)/oss-cad-suite/bin" >> $GITHUB_PATH
+        source oss-cad-suite/environment
+
     - name: Install Mill
       run: |
         curl -L https://github.com/com-lihaoyi/mill/releases/download/0.11.7/0.11.7 -o mill
@@ -30,3 +38,6 @@ jobs:
 
     - name: Run tests
       run: ./mill cs.test
+
+    - name: Run make
+      run: make
