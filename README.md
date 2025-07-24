@@ -1,4 +1,4 @@
-# interrupt-controoler
+# interrupt-controller
 An example of an interrupt controller using chisel and mill on an iceStick
 
 You will need the following installed:
